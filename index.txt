@@ -1,0 +1,27 @@
+Deep Learning Practicals (2026-27) - Index
+
+1.py - TensorFlow Fundamentals and Perceptron
+2.py - Regression Using Keras
+3.py - CNN-Based Image Classification
+4.py - Transfer Learning for Image Classification
+5.py - Sentiment Analysis Using RNN, LSTM and GRU
+6.py - Autoencoder Implementation
+7.py - CNN Optimization Strategies
+8.py - ResNet50 Transfer Learning and Image Captioning
+9.py - Deep Learning-Based Recommendation System
+10.py - Sentiment Analysis on Network Graphs Using RNN
+11.py - Generative Adversarial Network (GAN)
+12.py - Transformer-Based Text Classification
+13.py - Multilayer Perceptron for Classification
+14.py - Binary Classification Using Deep Neural Networks
+15.py - Multiclass Classification Using Softmax
+16.py - Time-Series Forecasting Using LSTM
+17.py - Image Denoising Using Autoencoders
+18.py - Image Classification Using Data Augmentation
+19.py - Object Detection Using Transfer Learning
+20.py - Text Generation Using LSTM
+21.py - Named Entity Recognition Using Deep Learning
+22.py - Attention-Based Neural Machine Translation
+23.py - Variational Autoencoder (VAE)
+24.py - Deep Learning for Anomaly Detection
+25.py - Semantic Segmentation Using CNN
