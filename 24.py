@@ -23,3 +23,7 @@ thr = np.percentile(err(val), 99)
 pred = (err(te) > thr).astype(int)
 print("Threshold:", round(float(thr), 6))
 print("Precision:", round(precision_score(yte, pred), 4), "Recall:", round(recall_score(yte, pred), 4), "F1:", round(f1_score(yte, pred), 4))
+# idx = int(np.argmax((yte == 1) & (pred == 1)))
+# e = err(te[idx:idx + 1])[0]
+# print("Sample flagged transaction:", idx)
+# print("Reconstruction error:", round(float(e), 6), "| threshold:", round(float(thr), 6), "| flagged:", bool(e > thr))

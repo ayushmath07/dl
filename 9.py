@@ -45,3 +45,10 @@ for u, tset in list(truth.items())[:200]:
     topk = np.argsort(scores)[-10:]
     recalls.append(len(set(topk.tolist()) & tset) / len(tset))
 print("Recall@10:", round(float(np.mean(recalls)), 4))
+# iimap = {i: t for t, i in imap.items()}
+# u = 0
+# scores = Uw[u] @ Iw.T
+# for t in seen.get(u, ()):
+#     scores[t] = -1e9
+# topk = np.argsort(scores)[-10:][::-1]
+# print("Top-10 recommendations for user", u, ":", [iimap[int(t)] for t in topk])

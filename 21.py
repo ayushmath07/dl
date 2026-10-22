@@ -38,3 +38,9 @@ for i, (toks, tg) in enumerate(te[:500]):
     yp += [tags[t] for t in pred[i][:n]]
 want = [t for t in tags if any(k in t for k in ("PER", "ORG", "LOC"))]
 print(classification_report(yt, yp, labels=want))
+# i = 0
+# toks, tg = te[i]
+# n = min(len(toks), 60)
+# print("Sentence:", " ".join(toks))
+# print("True:    ", [tags[t] for t in tg[:n]])
+# print("Pred:    ", [tags[t] for t in pred[i][:n]])

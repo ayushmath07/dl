@@ -38,3 +38,6 @@ for name, model in [('Transformer', transformer()), ('LSTM', lstm_model())]:
     t0 = time.time()
     model.fit(Xtr, ytr, epochs=3, batch_size=64, verbose=0)
     print(name, 'accuracy:', round(model.evaluate(Xte, yte, verbose=0)[1], 4), 'train time:', round(time.time() - t0, 1), 's')
+# print('Text:', xte[0][:100])
+# print('Predicted class:', int(np.argmax(model.predict(Xte[:1], verbose=0)[0])))
+# print('Actual class:', int(yte[0]))

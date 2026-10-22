@@ -20,3 +20,6 @@ for name, cell in [("SimpleRNN", keras.layers.SimpleRNN), ("LSTM", keras.layers.
     acc = m.evaluate(x_test_pad, y_test, verbose=0)[1]
     long_acc = m.evaluate(x_long, y_long, verbose=0)[1]
     print(name, "Accuracy:", round(acc, 4), "Training time (s):", round(train_time, 1), "Long-review accuracy:", round(long_acc, 4))
+# pred = m.predict(x_test_pad[:1], verbose=0)
+# print("First 20 tokens of the review:", x_test[0][:20])
+# print("Predicted sentiment:", "Positive" if pred[0][0] > 0.5 else "Negative", "| Actual:", "Positive" if y_test[0] == 1 else "Negative")

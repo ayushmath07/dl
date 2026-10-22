@@ -12,3 +12,6 @@ for act in ['relu', 'sigmoid', 'tanh']:
         m.compile(opt, 'binary_crossentropy', metrics=['accuracy'])
         m.fit(xtr, ytr, epochs=30, batch_size=16, verbose=0)
         print(act, opt, round(m.evaluate(xte, yte, verbose=0)[1], 4))
+# p = m.predict(xte[:1], verbose=0)[0][0]
+# print('Predicted probability:', round(float(p), 4))
+# print('Predicted class:', int(p > 0.5), '| Actual class:', int(yte[0]))

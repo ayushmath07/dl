@@ -24,3 +24,9 @@ m_acc = mlp.evaluate(x_test, y_test, verbose=0)[1]
 
 print("Perceptron accuracy:", p_acc)
 print("MLP accuracy:", m_acc)
+# import matplotlib.as plt
+# plt.imshow(x_test[0], cmap="gray")
+# plt.axis("off")
+# plt.show()
+# pred = mlp.predict(x_test[:1], verbose=0)
+# print("Predicted:", int(pred[0].arpyplot gmax()), "Actual:", int(y_test[0]))

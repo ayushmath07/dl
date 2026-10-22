@@ -8,3 +8,8 @@ for units, act in [([128], 'relu'), ([256], 'relu'), ([128, 64], 'relu'), ([256,
     m.compile('adam', 'sparse_categorical_crossentropy', metrics=['accuracy'])
     m.fit(xtr, ytr, epochs=5, batch_size=128, verbose=0)
     print(units, act, round(m.evaluate(xte, yte, verbose=0)[1], 4))
+# import matplotlib.pyplot as plt
+# plt.imshow(xte[0], cmap='gray')
+# plt.title(f"Predicted: {m.predict(xte[:1], verbose=0)[0].argmax()}, Actual: {yte[0]}")
+# plt.axis('off')
+# plt.show()

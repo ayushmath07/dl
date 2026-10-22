@@ -23,3 +23,11 @@ for ex in tfds.load("voc/2007", split="test").take(5):
     plt.axis("off")
     plt.show()
 print("Mean IoU:", round(float(np.mean(ious)), 4))
+# ex = next(iter(tfds.load("voc/2007", split="test")))
+# img = ex["image"].numpy()
+# out = det(ex["image"][None])
+# boxes = out["detection_boxes"][0].numpy()[out["detection_scores"][0].numpy() > 0.4]
+# fig, ax = plt.subplots()
+# ax.imshow(img)
+# [ax.add_patch(patches.Rectangle((b[1] * img.shape[1], b[0] * img.shape[0]), (b[3] - b[1]) * img.shape[1], (b[2] - b[0]) * img.shape[0], fill=False, edgecolor="red", linewidth=2)) for b in boxes]
+# plt.axis("off"); plt.show()

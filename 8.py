@@ -56,3 +56,12 @@ for _ in range(max_len):
         break
     seq.append(idx)
 print("Generated caption:", " ".join(iw[i] for i in seq[1:]))
+# import matplotlib.pyplot as plt
+# plt.imshow(keras.utils.load_img(os.path.join(img_dir, names[0])))
+# plt.axis("off"); plt.show()
+# seq = [wi["startseq"]]
+# for _ in range(max_len):
+#     idx = int(np.argmax(model.predict([features[names[0]][None], keras.utils.pad_sequences([seq], maxlen=max_len)], verbose=0)))
+#     if idx not in iw or iw[idx] == "endseq": break
+#     seq.append(idx)
+# print("Caption:", " ".join(iw[i] for i in seq[1:]))

@@ -27,3 +27,11 @@ for seq_len, emb in [(40, 64), (80, 128)]:
     for temp in (0.5, 1.0):
         print("temperature:", temp)
         print(sample(m, seq_len, temp))
+# s = list(data[:seq_len - 5]) + [c2i[c] for c in "king "]
+# out = ""
+# for _ in range(100):
+#     p = m.predict(np.array([s]), verbose=0)[0]
+#     k = int(np.random.choice(len(chars), p=p / p.sum()))
+#     out += i2c[k]
+#     s = s[1:] + [k]
+# print("king " + out)

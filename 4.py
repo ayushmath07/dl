@@ -28,3 +28,10 @@ ft_acc = ft.evaluate(test_ds, verbose=0)[1]
 
 print("Feature extraction accuracy:", fe_acc)
 print("Fine-tuning accuracy:", ft_acc)
+# import matplotlib.pyplot as plt
+# xb, yb = next(iter(test_ds))
+# plt.imshow(xb[0])
+# plt.axis("off")
+# plt.show()
+# pred = ft.predict(xb[:1], verbose=0)
+# print("Predicted:", "Dog" if pred[0][0] > 0.5 else "Cat", "| Actual:", "Dog" if yb[0][0] > 0.5 else "Cat")

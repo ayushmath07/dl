@@ -30,3 +30,9 @@ for name, init, opt in experiments:
     h = m.fit(x_train, y_train, epochs=3, batch_size=64, validation_split=0.1, verbose=0)
     acc = m.evaluate(x_test, y_test, verbose=0)[1]
     print(name, "| Val accuracy per epoch:", [round(a, 3) for a in h.history["val_accuracy"]], "| Test accuracy:", round(acc, 4))
+# import matplotlib.pyplot as plt
+# plt.imshow(x_test[0])
+# plt.axis("off")
+# plt.show()
+# pred = m.predict(x_test[:1], verbose=0)
+# print("Predicted class:", int(pred[0].argmax()), "Actual class:", int(y_test[0][0]))

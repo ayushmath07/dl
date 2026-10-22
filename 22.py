@@ -45,3 +45,7 @@ hyps = [translate(p[0]) for p in pairs[:100]]
 print("BLEU:", round(corpus_bleu(refs, hyps, smoothing_function=SmoothingFunction().method1), 4))
 for p in pairs[:3]:
     print(p[0], "->", " ".join(translate(p[0])))
+# src = pairs[100][0]
+# print("EN:", src)
+# print("FR (true):", pairs[100][1].replace("<start> ", "").replace(" <end>", ""))
+# print("FR (pred):", " ".join(translate(src)))

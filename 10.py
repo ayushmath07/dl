@@ -26,3 +26,6 @@ for u, t in zip(df.user, df.text):
 G = G.subgraph([n for n, d in G.degree() if d > 1])
 nx.draw(G, node_color=[sent.get(n, 0.5) for n in G.nodes], cmap='RdYlGn', vmin=0, vmax=1, node_size=25, width=0.3)
 plt.show()
+# print('Text:', X[16000])
+# print('Predicted:', 'Positive' if m.predict(X[16000:16001], verbose=0)[0][0] > 0.5 else 'Negative')
+# print('Actual:', 'Positive' if Y[16000] == 1 else 'Negative')

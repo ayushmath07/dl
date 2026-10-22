@@ -18,3 +18,10 @@ for name, use in [("Without augmentation", False), ("With augmentation", True)]:
     m = build(use)
     h = m.fit(tr, validation_data=te, epochs=5, verbose=0)
     print(name, "| train acc:", round(h.history["accuracy"][-1], 4), "| val acc:", round(h.history["val_accuracy"][-1], 4))
+# import matplotlib.pyplot as plt
+# xb, yb = next(iter(te.take(1)))
+# p = float(m.predict(xb[:1], verbose=0)[0, 0])
+# plt.imshow(xb[0])
+# plt.title(f"pred: {'dog' if p > 0.5 else 'cat'} ({p:.2f}) | true: {'dog' if int(yb[0]) == 1 else 'cat'}")
+# plt.axis("off")
+# plt.show()

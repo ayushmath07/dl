@@ -38,3 +38,9 @@ for img, mask in te:
         inter[c] += np.logical_and(p == c, t == c).sum()
         union[c] += np.logical_or(p == c, t == c).sum()
 print("Mean IoU:", round(float(np.mean(inter / np.maximum(union, 1))), 4))
+# for img, mask in te.take(1):
+#     p = np.argmax(m.predict(img, verbose=0), axis=-1)
+#     fig, ax = plt.subplots(1, 2, figsize=(8, 4))
+#     ax[0].imshow(img[0]); ax[0].axis("off")
+#     ax[1].imshow(p[0]); ax[1].axis("off")
+#     plt.show()
